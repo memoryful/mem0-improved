@@ -41,10 +41,14 @@ env/
 # Dataset files (large files, download separately)
 dataset/locomo10.json
 dataset/locomo10_rag.json
+# But keep .gitkeep to preserve directory structure
+!dataset/.gitkeep
 
 # Results
 results/*.json
 results/*.csv
+# But keep .gitkeep to preserve directory structure
+!results/.gitkeep
 
 # ChromaDB
 chroma_db/
