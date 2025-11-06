@@ -120,10 +120,14 @@ This creates a summary JSON file with average scores across all question categor
 Compare results with the original Mem0 implementation:
 
 ```bash
+# Note: This requires the original Mem0 evaluation results file
+# If you have it, provide the path:
 python compare_results.py \
-    --original_file ../mem0/evaluation/evaluation_metrics.json \
+    --original_file path/to/original/evaluation_metrics.json \
     --improved_file evaluation_improved_metrics.json
 ```
+
+**Note**: The comparison step is optional and only needed if you want to compare against the original Mem0 baseline. The improved version runs independently using the `mem0ai` package installed via pip.
 
 ## 🧪 Testing Instructions
 
